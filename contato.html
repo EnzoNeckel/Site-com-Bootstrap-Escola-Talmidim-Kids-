@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Talmidim Kids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Talmidim Kids
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato.html">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Atendimento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#cadastro">
+                                        Cadastro
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#localizacao">
+                                        Localização
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#horarios">
+                                        Informações
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-primary text-white text-center py-5">
+            <div class="container py-3">
+                <h1 class="display-4 fw-bold">
+                    Entre em Contato
+                </h1>
+                <p class="lead mt-3 mb-0">
+                    Estamos prontos para atender sua família
+                </p>
+            </div>
+        </section>
+
+      <section class="container py-5">
+    <div class="row align-items-center justify-content-between g-5">
+        
+        <div class="col-lg-6">
+            <h2 class="fw-bold mb-4 text-primary" id="cadastro">
+                Cadastro e Matrícula
+            </h2>
+            <p class="text-secondary">
+                Para iniciar o processo de matrícula, preencha os dados abaixo e nossa equipe entrará em contato pelo WhatsApp.
+            </p>
+
+            <form action="index.html" class="mt-4 shadow-sm p-4 bg-light rounded">
+                
+                <div class="mb-3">
+                    <label for="nomeResponsavel" class="form-label fw-semibold">
+                        Nome do Responsável
+                    </label>
+                    <input type="text" id="nomeResponsavel" class="form-control" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="whatsapp" class="form-label fw-semibold">
+                        WhatsApp
+                    </label>
+                    <input type="tel" id="whatsapp" class="form-control" placeholder="(51) 99999-9999" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="nomeCrianca" class="form-label fw-semibold">
+                        Nome da Criança
+                    </label>
+                    <input type="text" id="nomeCrianca" class="form-control" placeholder="Nome completo da criança" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="idadeCrianca" class="form-label fw-semibold">
+                        Faixa Etária da Criança
+                    </label>
+                    <select id="idadeCrianca" class="form-select" required>
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="6m-2a">6 meses a 2 anos</option>
+                        <option value="3-5a">3 a 5 anos</option>
+                        <option value="6-12a">6 a 12 anos</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100 mt-2 fw-bold">
+                    Enviar Cadastro
+                </button>
+            </form>
+            </div>
+
+        <div class="col-lg-6 text-center">
+            <img src="imagens/criança_feliz.jpg"
+                class="img-fluid rounded shadow" alt="Escola infantil Talmidim Kids">
+        </div>
+
+    </div>
+</section>
+
+        <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroTitulo"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-success text-white">
+                        <h2 class="modal-title fs-5" id="modalCadastroTitulo">
+                            Cadastro Enviado com Sucesso!
+                        </h2>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body p-4 text-secondary">
+                        <p>Em instantes nossa equipe entrará em contato pelo WhatsApp.</p>
+                        <p class="mb-0">Obrigado pelo interesse na Talmidim Kids! Mal podemos esperar para conhecer sua
+                            família. </p>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container py-5" id="horarios">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Informações Importantes
+                </h2>
+                <p class="text-muted">Tudo que você precisa saber antes de matricular</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card shadow h-100 border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">Faixa Etária</h5>
+                            <p class="card-text text-secondary mb-1">6 meses a 6 anos</p>
+                            <p class="card-text text-secondary mb-0">Contraturno até 12 anos</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card shadow h-100 border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">Investimento</h5>
+                            <p class="card-text text-secondary mb-1">Meio turno: R$ 700,00</p>
+                            <p class="card-text text-secondary mb-0">Integral: R$ 1.200,00</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card shadow h-100 border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">Oficinas</h5>
+                            <p class="card-text text-secondary small mb-0">
+                                Inglês, Ballet, Musicalização, Taekwondo, Espanhol e mais.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5" id="localizacao">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Nossa Localização
+                </h2>
+                <p class="text-muted">Venha nos visitar e conhecer a escola pessoalmente</p>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold text-primary">
+                        Talmidim Kids
+                    </h4>
+                    <address class="mt-4 fst-normal text-secondary">
+                        <p>
+                            <strong>Endereço:</strong><br>
+                            Av. Central, Capão da Canoa – nº 624/636
+                        </p>
+                        <p>
+                            <strong>Instagram:</strong><br>
+                            <a href="https://www.instagram.com/talmidim.kids/" target="_blank" rel="noopener noreferrer"
+                                class="link-primary">
+                                @talmidim.kids
+                            </a>
+                        </p>
+                    </address>
+                    <p class="text-secondary">
+                        Ambiente acolhedor, seguro e preparado para receber sua família com muito carinho.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow">
+                        <iframe src="https://www.google.com/maps?q=Av.+Central+Capão+da+Canoa&output=embed"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da Talmidim Kids no mapa">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-4 mt-5">
+        <div class="container">
+            <h4 class="fw-bold">Talmidim Kids</h4>
+            <p class="mb-1">Cuidar, amar, brincar e ensinar</p>
+            <address class="fst-normal mb-1">
+                Av. Central, Capão da Canoa – nº 624
+            </address>
+            <p class="mb-0">
+                <a href="https://www.instagram.com/talmidim.kids/" target="_blank" rel="noopener noreferrer"
+                    class="text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                    @talmidim.kids
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
