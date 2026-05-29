@@ -109,8 +109,8 @@ Este projeto teve como finalidade praticar:
 
 O projeto foi publicado utilizando GitHub Pages.
 
-🔗 Link do projeto:
-(Adicionar link do GitHub Pages aqui)
+Link do projeto:
+(https://enzoneckel.github.io/Site-com-Bootstrap-Escola-Talmidim-Kids-/)
 
 ---
 
